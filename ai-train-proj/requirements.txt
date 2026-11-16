@@ -1,0 +1,7 @@
+# CPU builds of the current compatible pair (torch 2.15 / torchvision 0.29).
+# The default PyPI Linux torch wheel depends on the CUDA 13.2 stack.
+# These CPU wheels install without a GPU and match train.py's CPU fallback.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+torchvision==0.29.2+cpu
+matplotlib==3.11.2
